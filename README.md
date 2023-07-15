@@ -1,7 +1,7 @@
 # Spring-Basic
-<br><br>
+<br>
 ## 좋은 객체 지향 설계의 5가지 원칙(SOLID)
-<br><br>
+<br>
 
 ### SRP(Single responsibility principle) 단일 책임 원칙 
 1.한 클래스는 하나의 책임만 가져야한다.(문맥과 상황에 따라)<br>
