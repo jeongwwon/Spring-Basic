@@ -17,17 +17,20 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
     @Bean
     public MemberService memberService() {
-        return new MemberServiceImpl(getMemberRepository());
+        System.out.println("call AppConfig.memberService");
+        return new MemberServiceImpl(MemberRepository());
     }
 
     @Bean
-    public MemoryMemberRepository getMemberRepository() {
+    public MemoryMemberRepository MemberRepository() {
+        System.out.println("call AppConfig.getMemberRepository");
         return new MemoryMemberRepository();
     }
 
     @Bean
     public OrderService orderService() {
-        return new OrderServiceImpl(getMemberRepository(), discountPolicy());
+        System.out.println("call AppConfig.orderService");
+        return new OrderServiceImpl(MemberRepository(), discountPolicy());
     }
 
     @Bean
